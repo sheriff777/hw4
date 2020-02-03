@@ -1,4 +1,6 @@
+
 import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.SelenideElement;
 import com.codeborne.selenide.Selenide;
 import org.junit.jupiter.api.AfterEach;
@@ -14,7 +16,7 @@ import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.Condition.*;
 
 
-public class OrderCardWithDeliveryTest {
+class OrderCardWithDelivery {
 
     SelenideElement form = $("form.form");
     LocalDate nowDate =  LocalDate.now();
@@ -27,6 +29,7 @@ public class OrderCardWithDeliveryTest {
     @BeforeEach
     void setup() {
         open("http:\\localhost:9999");
+        Configuration.timeout = 15000;
     }
 
     @AfterEach
@@ -46,8 +49,9 @@ public class OrderCardWithDeliveryTest {
         form.$("[data-test-id=phone] input").setValue("+72544112250");
         form.$("[data-test-id=agreement]").click();
         $$("button").find(exactText("Забронировать")).click();
-        $("[data-test-id=notification]").waitUntil(visible, 15000);
+        //     $("[data-test-id=notification]").waitUntil(visible, 15000);
         $("[data-test-id=notification] .notification__title").shouldHave(exactText("Успешно!"));
         $("[data-test-id=notification] .notification__content").shouldHave(exactText("Встреча успешно забронирована на " + DateForDelivery));
+
     }
 }
