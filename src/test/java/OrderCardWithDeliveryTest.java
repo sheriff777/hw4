@@ -46,8 +46,8 @@ public class OrderCardWithDeliveryTest {
         form.$("[data-test-id=phone] input").setValue("+72544112250");
         form.$("[data-test-id=agreement]").click();
         $$("button").find(exactText("Забронировать")).click();
+        $("[data-test-id=notification]").waitUntil(visible, 15000);
         $("[data-test-id=notification] .notification__title").shouldHave(exactText("Успешно!"));
         $("[data-test-id=notification] .notification__content").shouldHave(exactText("Встреча успешно забронирована на " + DateForDelivery));
-        $("[data-test-id=notification]").waitUntil(exist, 15000);
     }
 }

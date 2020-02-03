@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="OrderCardWithDeliveryTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2020-02-02T19:29:14" hostname="WIN-KDQ8SFLE901" time="13.682">
+<testsuite name="OrderCardWithDeliveryTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2020-02-02T19:48:23" hostname="WIN-KDQ8SFLE901" time="15.472">
   <properties/>
-  <testcase name="shouldOrderCardWithDelivery()" classname="OrderCardWithDeliveryTest" time="13.682">
-    <failure message="com.codeborne.selenide.ex.ElementShould: Element should have exact text 'Успешно!' {[data-test-id=notification] .notification__title}&#10;Element: '&lt;div class=&quot;notification__title&quot; displayed:false&gt;&lt;/div&gt;'&#10;Screenshot: file:/C:/Users/User/IdeaProjects/selenide_hw/build/reports/tests/1580671766323.0.png&#10;Page source: file:/C:/Users/User/IdeaProjects/selenide_hw/build/reports/tests/1580671766323.0.html&#10;Timeout: 4 s." type="com.codeborne.selenide.ex.ElementShould">com.codeborne.selenide.ex.ElementShould: Element should have exact text 'Успешно!' {[data-test-id=notification] .notification__title}
+  <testcase name="shouldOrderCardWithDelivery()" classname="OrderCardWithDeliveryTest" time="15.472">
+    <failure message="com.codeborne.selenide.ex.ElementShould: Element should have exact text 'Успешно!' {[data-test-id=notification] .notification__title}&#10;Element: '&lt;div class=&quot;notification__title&quot; displayed:false&gt;&lt;/div&gt;'&#10;Screenshot: file:/C:/Users/User/IdeaProjects/selenide_hw/build/reports/tests/1580672917714.0.png&#10;Page source: file:/C:/Users/User/IdeaProjects/selenide_hw/build/reports/tests/1580672917714.0.html&#10;Timeout: 4 s." type="com.codeborne.selenide.ex.ElementShould">com.codeborne.selenide.ex.ElementShould: Element should have exact text 'Успешно!' {[data-test-id=notification] .notification__title}
 Element: '&lt;div class=&quot;notification__title&quot; displayed:false&gt;&lt;/div&gt;'
-Screenshot: file:/C:/Users/User/IdeaProjects/selenide_hw/build/reports/tests/1580671766323.0.png
-Page source: file:/C:/Users/User/IdeaProjects/selenide_hw/build/reports/tests/1580671766323.0.html
+Screenshot: file:/C:/Users/User/IdeaProjects/selenide_hw/build/reports/tests/1580672917714.0.png
+Page source: file:/C:/Users/User/IdeaProjects/selenide_hw/build/reports/tests/1580672917714.0.html
 Timeout: 4 s.
 	at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:72)
 	at com.codeborne.selenide.commands.Should.execute(Should.java:24)
@@ -106,31 +106,31 @@ Timeout: 4 s.
 </failure>
   </testcase>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[фев 03, 2020 1:29:14 AM com.codeborne.selenide.drivercommands.LazyDriver getAndCheckWebDriver
+  <system-err><![CDATA[фев 03, 2020 1:48:23 AM com.codeborne.selenide.drivercommands.LazyDriver getAndCheckWebDriver
 INFO: No webdriver is bound to current thread: 11 - let's create a new webdriver
 SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}) on port 16087
+Starting ChromeDriver 79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}) on port 12867
 Only local connections are allowed.
 Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-фев 03, 2020 1:29:17 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+фев 03, 2020 1:48:29 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-фев 03, 2020 1:29:17 AM com.codeborne.selenide.webdriver.BrowserResizer adjustBrowserSize
+фев 03, 2020 1:48:29 AM com.codeborne.selenide.webdriver.BrowserResizer adjustBrowserSize
 INFO: Set browser size to 1366x768
-фев 03, 2020 1:29:19 AM com.codeborne.selenide.webdriver.WebDriverFactory logBrowserVersion
+фев 03, 2020 1:48:30 AM com.codeborne.selenide.webdriver.WebDriverFactory logBrowserVersion
 INFO: BrowserName=chrome Version=79.0.3945.130 Platform=WINDOWS
-фев 03, 2020 1:29:19 AM com.codeborne.selenide.webdriver.WebDriverFactory createWebDriver
+фев 03, 2020 1:48:30 AM com.codeborne.selenide.webdriver.WebDriverFactory createWebDriver
 INFO: Selenide v. 5.3.1
-фев 03, 2020 1:29:19 AM com.codeborne.selenide.webdriver.WebDriverFactory logSeleniumInfo
+фев 03, 2020 1:48:30 AM com.codeborne.selenide.webdriver.WebDriverFactory logSeleniumInfo
 INFO: Selenium WebDriver v. 3.141.59 build time: 2018-11-14T08:17:03
-фев 03, 2020 1:29:19 AM com.codeborne.selenide.drivercommands.CreateDriverCommand createDriver
-INFO: Create webdriver in current thread 11: ChromeDriver -> ChromeDriver: chrome on WINDOWS (719ef0aacb8f3b8e4a696a4c3362613d)
-фев 03, 2020 1:29:27 AM com.codeborne.selenide.drivercommands.CloseDriverCommand run
-INFO: Close webdriver: 11 -> ChromeDriver: chrome on WINDOWS (719ef0aacb8f3b8e4a696a4c3362613d)
-фев 03, 2020 1:29:27 AM com.codeborne.selenide.drivercommands.CloseBrowser run
+фев 03, 2020 1:48:30 AM com.codeborne.selenide.drivercommands.CreateDriverCommand createDriver
+INFO: Create webdriver in current thread 11: ChromeDriver -> ChromeDriver: chrome on WINDOWS (f16d03ee1add3456984103697f5138a1)
+фев 03, 2020 1:48:38 AM com.codeborne.selenide.drivercommands.CloseDriverCommand run
+INFO: Close webdriver: 11 -> ChromeDriver: chrome on WINDOWS (f16d03ee1add3456984103697f5138a1)
+фев 03, 2020 1:48:38 AM com.codeborne.selenide.drivercommands.CloseBrowser run
 INFO: Trying to close the browser ChromeDriver ...
-фев 03, 2020 1:29:27 AM com.codeborne.selenide.drivercommands.CloseDriverCommand run
-INFO: Closed webdriver 11 in 728 ms
+фев 03, 2020 1:48:39 AM com.codeborne.selenide.drivercommands.CloseDriverCommand run
+INFO: Closed webdriver 11 in 717 ms
 ]]></system-err>
 </testsuite>
