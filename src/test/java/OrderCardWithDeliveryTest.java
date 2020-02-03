@@ -16,7 +16,7 @@ import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.Condition.*;
 
 
-class OrderCardWithDelivery {
+class OrderCardWithDeliveryTest {
 
     SelenideElement form = $("form.form");
     LocalDate nowDate =  LocalDate.now();
