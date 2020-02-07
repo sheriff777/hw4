@@ -2,6 +2,8 @@ Thumbs.db*
 .DS_Store
 HELP.md
 .gradle
+.gradle/
+.idea/
 build/
 
 ### STS ###
