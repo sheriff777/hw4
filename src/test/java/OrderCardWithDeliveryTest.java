@@ -27,7 +27,6 @@ class OrderCardWithDeliveryTest {
     @BeforeEach
     void setup() {
         open("http:\\localhost:9999");
-        Configuration.timeout = 4000;
     }
 
     @AfterEach
@@ -48,6 +47,6 @@ class OrderCardWithDeliveryTest {
         $$("button").find(exactText("Забронировать")).click();
         $("[data-test-id=notification] .notification__title").shouldHave(exactText("Успешно!"));
         $("[data-test-id=notification] .notification__content").shouldHave(exactText("Встреча успешно забронирована на " + DateForDelivery));
-
+        notification.waitUntil(exist, 15000);
     }
 }
