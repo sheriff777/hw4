@@ -19,6 +19,7 @@ import static com.codeborne.selenide.Condition.*;
 class OrderCardWithDeliveryTest {
 
     SelenideElement form = $("form.form");
+    SelenideElement notification = $(withText("Успешно"));
     LocalDate nowDate =  LocalDate.now();
     LocalDate plusSevenDays = nowDate.plusDays(7);
     String DateForDelivery = plusSevenDays.format(DateTimeFormatter.ofPattern("dd.MM.yyyy"));
