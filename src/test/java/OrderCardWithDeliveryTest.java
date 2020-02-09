@@ -27,7 +27,7 @@ class OrderCardWithDeliveryTest {
     @BeforeEach
     void setup() {
         open("http:\\localhost:9999");
-        Configuration.timeout = 15000;
+        Configuration.timeout = 4000;
     }
 
     @AfterEach
