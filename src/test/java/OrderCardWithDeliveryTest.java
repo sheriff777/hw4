@@ -19,7 +19,6 @@ import static com.codeborne.selenide.Condition.*;
 class OrderCardWithDeliveryTest {
 
     SelenideElement form = $("form.form");
-    SelenideElement notification = $(withText("Успешно"));
     LocalDate nowDate =  LocalDate.now();
     LocalDate plusSevenDays = nowDate.plusDays(7);
     String DateForDelivery = plusSevenDays.format(DateTimeFormatter.ofPattern("dd.MM.yyyy"));
@@ -28,6 +27,7 @@ class OrderCardWithDeliveryTest {
     @BeforeEach
     void setup() {
         open("http:\\localhost:9999");
+        Configuration.waitUntil(exist, 15000);
     }
 
     @AfterEach
@@ -48,6 +48,6 @@ class OrderCardWithDeliveryTest {
         $$("button").find(exactText("Забронировать")).click();
         $("[data-test-id=notification] .notification__title").shouldHave(exactText("Успешно!"));
         $("[data-test-id=notification] .notification__content").shouldHave(exactText("Встреча успешно забронирована на " + DateForDelivery));
-        notification.waitUntil(exist, 15000);
+
     }
 }
